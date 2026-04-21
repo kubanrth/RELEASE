@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Create account — release</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body class="min-h-screen">
+<div data-release-header></div>
+
+<section class="page-banner text-center">
+  <div class="mx-auto max-w-[1200px] px-6">
+    <div class="crumbs mb-6"><a href="../index.html">Home</a><span class="sep">/</span><a href="login.html">Account</a><span class="sep">/</span><span>Register</span></div>
+    <h1>Create <em class="font-wonk font-normal">account</em></h1>
+    <p>Save your details for faster checkout and track your orders.</p>
+  </div>
+</section>
+<section class="onlight bg-white">
+  <div class="mx-auto max-w-[460px] px-6 py-20">
+    <form class="space-y-5" onsubmit="event.preventDefault()">
+      <div class="grid grid-cols-2 gap-4">
+        <label class="block"><span class="text-[11px] tracking-wide2 uppercase text-black/60">First name</span><input class="mt-2 w-full h-12 px-4 border hairline rounded-[2px] text-[14px] outline-none focus:border-black"/></label>
+        <label class="block"><span class="text-[11px] tracking-wide2 uppercase text-black/60">Last name</span><input class="mt-2 w-full h-12 px-4 border hairline rounded-[2px] text-[14px] outline-none focus:border-black"/></label>
+      </div>
+      <label class="block"><span class="text-[11px] tracking-wide2 uppercase text-black/60">Email</span><input type="email" class="mt-2 w-full h-12 px-4 border hairline rounded-[2px] text-[14px] outline-none focus:border-black"/></label>
+      <label class="block"><span class="text-[11px] tracking-wide2 uppercase text-black/60">Password</span><input type="password" class="mt-2 w-full h-12 px-4 border hairline rounded-[2px] text-[14px] outline-none focus:border-black"/></label>
+      <label class="flex items-start gap-2 text-[12px] text-black/65"><input type="checkbox" class="mt-0.5"/>I agree to the <a href="terms.html" class="link-underline">terms of service</a> and <a href="privacy.html" class="link-underline">privacy policy</a>.</label>
+      <button class="w-full h-12 rounded-full bg-black text-white text-[11px] tracking-wide2 uppercase font-medium pill pill-dark">Create account</button>
+    </form>
+    <p class="mt-8 text-center text-[13px] text-black/60">Already have an account? <a href="login.html" class="link-underline">Sign in</a></p>
+  </div>
+</section>
+
+<div data-release-footer></div>
+<script src="../assets/partials.js"></script>
+</body>
+</html>
